@@ -1,21 +1,14 @@
+/**@jsxRuntime classic */
 /**@jsx jsx */
 import { css, jsx, Global } from "@emotion/react";
 import React from "react";
-import CondensedDisplay from "./fonts/Moniqa-CondensedDisplay.otf";
-import MediumCondensedDisplay from "./fonts/Moniqa-MediumCondensedDisplay.otf";
-import BoldCondensedDisplay from "./fonts/Moniqa-BoldCondensedDisplay.otf";
-import BlackCondensedDisplay from "./fonts/Moniqa-BlackCondensedDisplay.otf";
-import background from "./img/katsiaryna-endruszkiewicz-20SYlxMNiQA-unsplash.jpg";
+import "./styles.css";
 
 function App() {
   return (
     <div
       className="App"
       css={css`
-        height: 100vh;
-        background: url(${background});
-        background-size: cover;
-
         p {
           font-size: 10rem;
           font-family: moniqa;
@@ -29,35 +22,30 @@ function App() {
         styles={css`
           @font-face {
             font-family: moniqa;
-            src: url(${CondensedDisplay});
+            src: url("../fonts/Moniqa-CondensedDisplay.otf");
             font-style: normal;
             font-weight: 200;
           }
 
           @font-face {
-            font-family: moniqa;
-            src: url(${MediumCondensedDisplay});
+            font-family: "moniqa";
+            src: url("./fonts/Moniqa-MediumCondensedDisplay.otf");
             font-style: normal;
             font-weight: 400;
           }
 
           @font-face {
             font-family: moniqa;
-            src: url(${BoldCondensedDisplay});
+            src: url("../fonts/Moniqa-BoldCondensedDisplay.otf");
             font-style: normal;
             font-weight: 600;
           }
 
           @font-face {
             font-family: moniqa;
-            src: url(${BlackCondensedDisplay});
+            src: url("../fonts/Moniqa-BlackCondensedDisplay.otf");
             font-style: normal;
             font-weight: 800;
-          }
-
-          * {
-            margin: 0;
-            padding: 0;
           }
         `}
       />
