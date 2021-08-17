@@ -1,11 +1,15 @@
 /**@jsx jsx */
 import { css, jsx, Global } from "@emotion/react";
 import React from "react";
+
+import Navbar from "./components/Navbar";
+import Content from "./components/Content";
+
 import CondensedDisplay from "./fonts/Moniqa-CondensedDisplay.otf";
 import MediumCondensedDisplay from "./fonts/Moniqa-MediumCondensedDisplay.otf";
 import BoldCondensedDisplay from "./fonts/Moniqa-BoldCondensedDisplay.otf";
 import BlackCondensedDisplay from "./fonts/Moniqa-BlackCondensedDisplay.otf";
-import background from "./img/katsiaryna-endruszkiewicz-20SYlxMNiQA-unsplash.jpg";
+import background from "./img/katsiaryna-endruszkiewicz-unsplash.jpg";
 
 function App() {
   return (
@@ -15,18 +19,14 @@ function App() {
         height: 100vh;
         background: url(${background});
         background-size: cover;
-
-        p {
-          font-size: 10rem;
-          font-family: moniqa;
-          font-weight: 400;
-          color: #dcedf2;
-        }
       `}
     >
-      <p>ALMOST BEFORE WE KNEW</p>
+      <Navbar />
+      <Content />
       <Global
         styles={css`
+          @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
           @font-face {
             font-family: moniqa;
             src: url(${CondensedDisplay});
@@ -58,6 +58,11 @@ function App() {
           * {
             margin: 0;
             padding: 0;
+          }
+
+          .container {
+            max-width: 1280px;
+            margin: auto;
           }
         `}
       />
