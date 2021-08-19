@@ -11,7 +11,7 @@ const Content = () => {
         font-weight: 200;
         font-size: 10rem;
         color: #dcedf2;
-        height: 85vh;
+        height: 80vh;
         display: flex;
         justify-content: space-between;
         align-items: center;

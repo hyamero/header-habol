@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav
       className="Navbar container"
       css={css`
-        padding: 20px 50px;
+        padding: 45px 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
