@@ -2,4 +2,4 @@
   Haboleon 🔰
 </h2>
 
-![alt text](img/haboleon.jpg)
+![Haboleon](src/img/haboleon.jpg)
